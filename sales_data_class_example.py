@@ -33,14 +33,14 @@ class SalesReport:
         print(f'Top Sale:     {top.product} at ${top.amount:,.2f}')
 
 
-  # Create some records
+# Create some records
 r1 = SalesRecord(101, 'Hiking Boots', 129.99, '2025-03-01')
 r2 = SalesRecord(101, 'Tent', 349.99, '2025-03-02')
 r3 = SalesRecord(204, 'Water Bottle', 24.99, '2025-03-03')
 
 r1.summary()    # calling a method on a SalesRecord instance
 
-  # Build a report by adding records to it
+# Build a report by adding records to it
 east = SalesReport('East')
 east.add_record(r1)
 east.add_record(r2)
